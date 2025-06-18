@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app->bind(ProjectService::class, ProjectServiceImpl::class);
-         $this->app->bind(TaskService::class, TaskServiceImpl::class);
+        $this->app->bind(TaskService::class, TaskServiceImpl::class);
     }
 
     /**

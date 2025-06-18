@@ -19,8 +19,10 @@ class TaskController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:50',
-            'state' => 'required|enum|max:50',
+            'state' => 'required|string|in:Earring,Filled',
+            'project_id' => 'required|integer|exists:projects,id',
         ]);
+
 
         $task = $this->taskService->create($request->all());
 
