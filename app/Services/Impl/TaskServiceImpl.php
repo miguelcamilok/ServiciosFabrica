@@ -11,4 +11,9 @@ class TaskServiceImpl implements TaskService
     {
         return Task::create($data);
     }
+
+    public function getAll()
+    {
+        return Task::all();
+    }
 }

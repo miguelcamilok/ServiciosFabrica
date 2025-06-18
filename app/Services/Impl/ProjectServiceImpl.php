@@ -12,4 +12,9 @@ class ProjectServiceImpl implements ProjectService
     {
         return Project::create($data);
     }
+
+    public function getAll()
+    {
+        return Project::all();
+    }
 }
